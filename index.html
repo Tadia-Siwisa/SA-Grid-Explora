@@ -465,6 +465,8 @@
         }
 
         /* ===== LEAFLET ===== */
+        .explorer-basemap { filter: invert(1) hue-rotate(180deg) brightness(0.65) saturate(0.5); }
+        .leaflet-bottom.leaflet-right { bottom: 76px; }
         .leaflet-container { background: var(--bg) !important; }
         .leaflet-control-attribution {
             font-size: 0.5rem !important;
@@ -787,10 +789,10 @@
             maxBoundsViscosity: 1.0
         }).setView([-29.5, 25.0], 5);
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OSM & CARTO',
-            subdomains: 'abcd',
-            maxZoom: 20
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            className: 'explorer-basemap',
+            maxZoom: 19
         }).addTo(map);
 
         // ===== ICONS =====
