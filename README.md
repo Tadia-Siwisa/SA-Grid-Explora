@@ -2,7 +2,7 @@
 
 **An interactive systems-mapping tool for understanding South Africa's electricity network as an interconnected whole — not a collection of isolated problems.**
 
-🔗 [Live Project](https://tadia-siwisa.github.io/energy-flow-dash/)
+🔗 [Live Project](https://tadia-siwisa.github.io/SA-Grid-Explora/)
 📄 Companion reflection: *Commentary Note 001 — From Problems to Systems*
 
 ---
